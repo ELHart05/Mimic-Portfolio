@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.nav_bar{
+    background-color: #be3144;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+}
+.nav_bar > button{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 15px;
+    margin-right: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+.nav_bar > button:hover{color: #303841;}
+
+.intro{
+    background-color: #303841;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 330px;
+}
+.pre_title1{
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 330px;
+}
+
+.main{
+    background-color: #45567d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title2{
+    display: flex;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    font-size: 30px;
+    color: white;
+    margin-top: 50px;
+}
+
+.projects{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.projects > div > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 33.33%;
+    background-color: #303841;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.projects > div > div:hover{
+    background-color: red;
+}
+
+
+.projects > div > div > img{
+    width: 100%;
+    height: 450px;
+}
+
+.projects > div > div > p{
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.main > button {
+    display: flex;
+    margin-top: 3%;
+    padding: 5px 10px;
+    color: white;
+    background-color: #303841;
+    border: transparent;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.main > button:hover{background-color: red;}
+
+.info{
+    background-color: #303841;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title3{
+    margin-top: 230px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.pre_title2{
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.info > div > button{
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 35px 11px 230px 0;
+    cursor: pointer;
+    text-align: center;
+}
+.info > div > button:hover{color: red;}
+
+.line{
+    border: 1px solid red;
+    background: red;
+}
+
+.notes{
+    background-color: #303841;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes > p {
+    color: white;
+    font-size: 15px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1000px) and (min-width: 100px) {
+
+    .title2{margin-bottom: 40px;}
+
+    .projects{
+        flex-direction: column
+    }
+    .projects > div{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .projects > div > div > img{
+        height: 250px;
+    }
+    .projects > div > div{
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .main > button{
+        margin-top: 30px;
+    }
+
+    .title3{margin-top: 50px;}
+
+    .info > div > button{
+        text-align: center;
+        margin: 0 0 15px 0;
+    }
+    .info > div{
+        display: flex;
+        flex-direction: column;
+        margin: 35px 0 50px 0;
+    }
+}
