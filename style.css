@@ -21,8 +21,11 @@ body{
     margin-right: 20px;
     height: 40px;
     cursor: pointer;
+    transition: 0.8s;
 }
-.nav_bar > button:hover{color: #303841;}
+.nav_bar > button:hover{
+    color: black;
+}
 
 .intro{
     background-color: #303841;
@@ -86,9 +89,11 @@ body{
     background-color: #303841;
     margin: 0 20px;
     cursor: pointer;
+    transition: 0.8s;
 }
 .projects > div > div:hover{
     background-color: red;
+    transform: scale(1.02);
 }
 
 
@@ -114,8 +119,12 @@ body{
     text-align: center;
     cursor: pointer;
     margin-bottom: 50px;
+    transition: 0.8s;
 }
-.main > button:hover{background-color: red;}
+.main > button:hover{
+    background-color: red;
+    transform: scale(1.1);
+}
 
 .info{
     background-color: #303841;
@@ -139,7 +148,7 @@ body{
 }
 
 
-.info > div > button{
+.info > div > a > button{
     text-align: center;
     color: white;
     background-color: transparent;
@@ -149,8 +158,11 @@ body{
     margin: 35px 11px 230px 0;
     cursor: pointer;
     text-align: center;
+    transition: 1s;
 }
-.info > div > button:hover{color: red;}
+.info > div > a > button:hover{
+    color: red;
+}
 
 .line{
     border: 1px solid red;
