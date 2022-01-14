@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav_bar{
@@ -17,11 +19,12 @@ body{
     background-color: transparent;
     border-color: transparent;
     color: white;
-    font-size: 15px;
-    margin-right: 20px;
-    height: 40px;
+    font-size: 20px;
+    margin-right: 25px;
+    height: 55px;
     cursor: pointer;
     transition: 0.8s;
+    font-family: 'Poppins', sans-serif;
 }
 .nav_bar > button:hover{
     color: black;
@@ -32,20 +35,21 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
 }
 
 .title1{
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
-    margin-top: 330px;
+    padding: 0 10px;
 }
 .pre_title1{
     color: red;
-    font-size: 20px;
+    font-size: 25px;
     font-style: italic;
     text-align: center;
-    margin-bottom: 330px;
+    padding: 0 10px;
 }
 
 .main{
@@ -60,10 +64,11 @@ body{
     display: flex;
     text-align: center;
     text-decoration: underline;
-    text-underline-offset: 7px;
-    font-size: 30px;
+    text-underline-offset: 10px;
+    font-size: 40px;
     color: white;
     margin-top: 50px;
+    padding: 0 10px;
 }
 
 .projects{
@@ -85,7 +90,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    width: 33.33%;
+    width: 27%;
     background-color: #303841;
     margin: 0 20px;
     cursor: pointer;
@@ -100,6 +105,7 @@ body{
 .projects > div > div > img{
     width: 100%;
     height: 350px;
+    object-fit: cover;
 }
 
 .projects > div > div > p{
@@ -121,6 +127,7 @@ body{
     cursor: pointer;
     margin-bottom: 50px;
     transition: 0.8s;
+    font-family: 'Poppins', sans-serif;
 }
 .main > button:hover{
     background-color: red;
@@ -140,12 +147,14 @@ body{
     color: white;
     font-size: 40px;
     text-align: center;
+    padding: 0 10px;
 }
 .pre_title2{
     color: red;
     font-size: 20px;
     font-style: italic;
     text-align: center;
+    padding: 0 10px;
 }
 
 .info > div > a > button{
@@ -153,15 +162,17 @@ body{
     color: white;
     background-color: transparent;
     border-color: transparent;
-    font-size: 18px;
-    font-weight: 200;
-    margin: 35px 11px 230px 0;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 35px 15px 230px 0;
     cursor: pointer;
     text-align: center;
-    transition: 1s;
+    transition: 1s ease-out;
+    font-family: 'Poppins', sans-serif;
 }
 .info > div > a > button:hover{
     color: red;
+    transform: translateY(8px);
 }
 
 .line{
@@ -179,7 +190,7 @@ body{
 
 .notes > p {
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     margin: 15px auto;
     text-align: center;
 }
@@ -226,6 +237,16 @@ body{
 
 
 @media (max-width: 475px) and (min-width: 50px) {
+
+    .nav_bar{
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_bar > button{
+        margin: 0 10px;
+        padding: 0;
+        font-size: 20px;
+    }
 
     .title2{margin-bottom: 40px;}
 
