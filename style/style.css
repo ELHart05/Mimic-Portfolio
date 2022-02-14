@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav_bar {
+    background-color: #be3144;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    box-shadow: 0 0 5px #000;
+}
+
+.nav_bar>button {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    margin-right: 25px;
+    height: 55px;
+    cursor: pointer;
+    transition: 0.8s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav_bar>button:hover {
+    color: black;
+}
+
+.intro {
+    background-color: #303841;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.title1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.pre_title1 {
+    color: red;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.main {
+    background-color: #45567d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title2 {
+    display: flex;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-size: 40px;
+    color: white;
+    margin-top: 50px;
+    padding: 0 10px;
+}
+
+.projects {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.projects>div>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 27%;
+    background-color: #303841;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.projects>div>div:hover {
+    background-color: red;
+    transform: scale(1.02);
+}
+
+
+.projects>div>div>img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.projects>div>div>p {
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0px 5px;
+    font-size: 20px;
+}
+
+.main>button {
+    display: flex;
+    margin-top: 3%;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: #303841;
+    border: transparent;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: 0.8s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main>button:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+
+.info {
+    background-color: #303841;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title3 {
+    margin-top: 230px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.pre_title2 {
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.info>div>a>button {
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 35px 15px 230px 0;
+    cursor: pointer;
+    text-align: center;
+    transition: 1s ease-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info>div>a>button:hover {
+    color: red;
+    transform: translateY(8px);
+}
+
+.line {
+    border: 1px solid red;
+    background: red;
+}
+
+.notes {
+    background-color: #303841;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes>p {
+    color: white;
+    font-size: 20px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.credits {
+    padding-left: 20px
+}
+
+.note {
+    padding-right: 20px;
+}
+
+@media (max-width: 1100px) and (min-width: 1000px) {
+    .projects>div>div>img {
+        height: 275px;
+    }
+    .projects>div>div>p{font-size: 19px;}
+}
+
+
+@media (max-width: 1000px) and (min-width: 475px) {
+    .title2 {
+        margin-bottom: 40px;
+    }
+
+    .projects {
+        flex-direction: column
+    }
+
+    .projects>div {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .projects>div>div>img {
+        height: 300px;
+    }
+
+    .projects>div>div {
+        width: 65%;
+        margin: 10px 0;
+    }
+
+    .main>button {
+        margin-top: 30px;
+    }
+
+    .title3 {
+        margin-top: 50px;
+    }
+
+    .info>div>a>button {
+        margin: 0 0 15px 0;
+    }
+
+    .info>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 35px 0 50px 0;
+    }
+}
+
+
+@media (max-width: 475px) and (min-width: 50px) {
+
+    .nav_bar {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_bar>button {
+        margin: 0 10px;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .title2 {
+        margin-bottom: 40px;
+    }
+
+    .projects {
+        flex-direction: column
+    }
+
+    .projects>div {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .projects>div>div>img {
+        height: 275px;
+    }
+
+    .projects>div>div {
+        width: 74%;
+        margin: 10px 0;
+    }
+
+    .main>button {
+        margin-top: 30px;
+    }
+
+    .title3 {
+        margin-top: 50px;
+        font-size: 33px;
+    }
+
+    .info>div>a>button {
+        margin: 0 0 15px 0;
+    }
+
+    .info>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 35px 0 50px 0;
+    }
+}
