@@ -1,5 +1,7 @@
 # MIMIC Portfolio Project
 
+![MIMIC](https://user-images.githubusercontent.com/96151694/154663606-c2b56f9a-7573-47cc-b27c-711d468879b6.png)
+
 Just a simple FreeCodeCamp Mimic Portfolio Remack using HTML and CSS.
 
 ALL RIGHT RESERVED FOR FREECODECAMP.
