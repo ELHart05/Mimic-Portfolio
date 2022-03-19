@@ -14,7 +14,15 @@ body {
     display: flex;
     justify-content: right;
     flex-direction: row;
-    box-shadow: 0 0 5px #000;
+    position: sticky;
+    top: 0;
+    transition: 1s;
+    z-index: 200;
+}
+
+.nav_bar_shadow {
+    box-shadow: 0 0 20px #000;
+    background-color: #a03c49;
 }
 
 .nav_bar>button {
@@ -23,7 +31,7 @@ body {
     color: white;
     font-size: 20px;
     margin-right: 25px;
-    height: 55px;
+    height: 65px;
     cursor: pointer;
     transition: 0.8s;
     font-family: 'Poppins', sans-serif;
@@ -147,6 +155,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .title3 {
@@ -216,7 +225,10 @@ body {
     .projects>div>div>img {
         height: 275px;
     }
-    .projects>div>div>p{font-size: 19px;}
+
+    .projects>div>div>p {
+        font-size: 19px;
+    }
 }
 
 
